@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SingUp Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./config.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  </head>
+  <body class="w-screen h-screen flex justify-center items-center">
+    <form id="singUp" class="w-[370px] h-auto rounded p-[30px] text-white bg-lightblack" action="#" name="singup" method="post">
+      <h1 class="text-2xl font-bold">Sing Up Form</h1>
+      <p class="font-regular text-xs mt-2 mb-3 text-gray-300">Please fill in this form to create an account!</p>
+      <hr/>
+      <div class="mt-3 flex flex-col-reverse items-center">
+        <input type="text" name="" value="" placeholder="First Name" id="firstName" class="myInput" >
+        <label for="firstName" class="text-sm">First Name</label>
+      </div>
+      <div class="mt-3 flex flex-col-reverse items-center">
+        <input type="text" name="" value="" placeholder="Last Name" id="lastName" class="myInput" >
+        <label for="lastName" class="text-sm">Last Name</label>
+      </div>
+      <div class="mt-3 flex flex-col-reverse items-center">
+        <input type="email" name="" value="" placeholder="Email" id="email" class="myInput" >
+        <label for="email" class="text-sm">Email</label>
+      </div>
+      <div class="mt-3 flex flex-col-reverse items-center">
+        <input type="text" name="" value="" style="-webkit-text-security: circle;" placeholder="Password" id="password" class="myInput" >
+        <label for="password" class="text-sm">Password</label>
+      </div>
+      <div class="mt-3 flex flex-col-reverse items-center">
+        <input type="text" name="" value="" style="-webkit-text-security: circle;" placeholder="Confirm Password" id="confirmPassword" class="myInput" >
+        <label for="confirmPassword" class="text-sm">Confirm Password</label>
+      </div>
+      <div class="mt-3">
+        <input type="checkbox" name="term" id="term">
+        <label for="term" class="text-sm text-gray-300">I accept <strong class="text-skyblue">the Terms of Use and Privacy Policy</strong></label>
+      </div>
+      <button type="submit" id="singupButton" class="bg-disableColor mt-6 mr-3 px-4 py-2 rounded select-none" disabled>Sing Up</button>
+      <button type="reset" class="text-red-500 select-none">RESET</button>
+  </form>
+    <script src="./index.js"></script>
+  </body>
+</html>

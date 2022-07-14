@@ -1,0 +1,31 @@
+body{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightgrey;
+    background-image: url(./topography.svg);
+    text-align: center;
+}
+form{
+    box-shadow: 10px 10px 5px 0px rgba(87,84,84,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(87,84,84,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(87,84,84,0.75);
+}
+.myInput{
+    background: transparent;
+    outline: none;
+    border-bottom: 1px solid skyblue;
+    height: 2.5rem;
+    width: 220px;
+    transition: 0.5s;
+    text-align: center;
+}
+.myInput:focus{
+    width: 100%;
+    border-bottom: 2px solid #04d1bd;
+}
+.myInput:focus + label{
+    color:  #04d1bd;
+    transition: 0.5s;
+}
